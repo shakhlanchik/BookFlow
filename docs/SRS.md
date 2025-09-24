@@ -30,3 +30,26 @@ However, many of these applications have disadvantages:
 - Advertising: some free versions of similar applications contain intrusive advertising that distracts from the reading process.
 
 The BookFlow project aims to overcome these shortcomings by offering a simple, clean and completely autonomous solution for managing a digital library.
+
+### 2 User requirements
+
+#### 2.1 Software interfaces
+
+The BookFlow application uses the following software interfaces:
+
+- Kivy is the main framework that provides an API for creating a user interface, managing events, and ensuring cross-platform compatibility (Android, iOS, Windows, macOS).
+- File handling libraries are nessesary to handle various e-book formats, the application will require specialised libraries such as:
+  - PyMuPDF (also known as `fitz`) for working with PDF files.
+  - PythEpub or a similar library for parsing and displaying EPUB files.
+
+#### 2.2 User interface
+
+The application login window.
+
+<img width="570" height="505" alt="image" src="https://github.com/user-attachments/assets/37011c87-9437-490f-b514-bace147cfd5f" />
+
+New user registration window.
+
+<img width="570" height="505" alt="image" src="https://github.com/user-attachments/assets/0d469686-0d5e-4fec-a984-d261138e9e84" />
+
+
