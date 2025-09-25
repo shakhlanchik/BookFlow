@@ -31,9 +31,9 @@ However, many of these applications have disadvantages:
 
 The BookFlow project aims to overcome these shortcomings by offering a simple, clean and completely autonomous solution for managing a digital library.
 
-### 2 User requirements
+## 2 User requirements
 
-#### 2.1 Software interfaces
+### 2.1 Software interfaces
 
 The BookFlow application uses the following software interfaces:
 
@@ -42,7 +42,7 @@ The BookFlow application uses the following software interfaces:
   - PyMuPDF (also known as `fitz`) for working with PDF files.
   - PythEpub or a similar library for parsing and displaying EPUB files.
 
-#### 2.2 User interface
+### 2.2 User interface
 
 The application login window.
 
@@ -52,4 +52,48 @@ New user registration window.
 
 <img width="570" height="505" alt="image" src="https://github.com/user-attachments/assets/0d469686-0d5e-4fec-a984-d261138e9e84" />
 
+Login window for registered users.
 
+<img width="570" height="505" alt="image" src="https://github.com/user-attachments/assets/cc351a00-331f-4523-9299-7a87bcfb27ad" />
+
+Main application window.
+
+<img width="570" height="505" alt="image" src="https://github.com/user-attachments/assets/961e752a-50bd-4d6a-9b02-da7006e3ccc8" />
+
+### 2.3 User characteristics
+
+#### 2.3.1 User classes
+
+| User class | Description |
+|:----|:----|
+| Visitors | Users who do not want to register in the application. They have access to partial functionality. |
+| Registered users | Users who have logged into the application under their own name and want to view information about their favourite films, selected according to their preferences, and add reviews to them. They have access to full functionality. |
+
+#### 2.3.2 Application audience
+
+##### 2.3.2.1 Target audience
+
+BookFlow's target audience is people who actively read, collect, and store hundreds of e-books. They often use different sources to obtain content and need to organise this chaos.
+
+##### 2.3.2.2 Secondary audience
+
+The app's secondary audience is people who work with large amounts of educational materials, technical documents, and articles (often in PDF format).
+
+### 2.4 Assumptions and dependencies
+
+1. The application cannot add books to your personal collection without an Internet connection.
+1. The application cannot view data about books that have not been added to your personal collection without an Internet connection.
+
+## 3 System requirements
+
+### 3.1 Functional requirements
+
+#### 3.1.1 Main functions
+
+##### 3.1.1.1 Library management
+
+| Function  |  Requirements |
+|:----|:----|
+| Adding a new book | The application must allow the user to select a file (EPUB or PDF) from the device's file system and add it to the local library. |
+| Deleting a book  | The application must allow the user to permanently delete a book from the local library. Confirmation must be requested before deletion. |
+| Search and filtering | The application must allow the user to search by title and author, as well as filter the list of books by genre or reading status. |
