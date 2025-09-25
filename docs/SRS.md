@@ -52,9 +52,21 @@ New user registration window.
 
 <img width="570" height="505" alt="image" src="https://github.com/user-attachments/assets/0d469686-0d5e-4fec-a984-d261138e9e84" />
 
+New user registration window after entering a name that is already registered in the application.
+
+<img width="568" height="505" alt="image" src="https://github.com/user-attachments/assets/d813bafa-c9ec-44c0-a106-3a44bb0f09e5" />
+
 Login window for registered users.
 
 <img width="570" height="505" alt="image" src="https://github.com/user-attachments/assets/cc351a00-331f-4523-9299-7a87bcfb27ad" />
+
+User account login window with incorrect login entry.
+
+<img width="570" height="505" alt="image" src="https://github.com/user-attachments/assets/8a1b5b50-b251-45c9-9f04-1ac4e2a7a733" />
+
+User account login window with incorrect password entry.
+
+<img width="570" height="505" alt="image" src="https://github.com/user-attachments/assets/90d2d5f2-99ed-4fc4-88c0-9e30b78b159b" />
 
 Main application window.
 
