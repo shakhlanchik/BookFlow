@@ -1,5 +1,71 @@
 # Software Requirements Specification (SRS)
 
+## Table of contents
+
+1 [Introduction](#introduction)
+
+1.1 [Purpose](#purpose)
+
+1.2 [Business requirements](#business-requirements)
+
+1.2.1 [Initial Data](#initial-data)
+
+1.2.2 [Business opportunities](#business-opportunities)
+
+1.2.3 [Project boundaries](#project-boundaries)
+
+1.3 [Analogues](#analogues)
+
+2 [User requirements](#user-requirements)
+
+2.1 [Software interfaces](#software-interfaces)
+
+2.2 [User interface](#user-interface)
+
+2.3 [User characteristics](#user-characteristics)
+
+2.3.1 [User classes](#user-classes)
+
+2.3.2 [Application audience](#application-audience)
+
+2.3.2.1 [Target audience](#target-audience)
+
+2.3.2.2 [Secondary audience](#secondary-audience)
+
+2.4 [Assumptions and dependencies](#assumptions-and-dependencies)
+
+3 [System requirements](#system-requirements)
+
+3.1 [Functional requirements](#functional-requirements)
+
+3.1.1 [Main functions](#main-functions)
+
+3.1.1.1 [Library management](#library-management)
+
+3.1.1.2 [Reading and progress](#reading-and-progress)
+
+3.1.1.3 [Working with files](#working-with-files)
+
+3.1.1.4 [User login to the application](#user-login-to-the-application)
+
+3.1.1.5 [Logged-in user logging out of their account](#logged-in-user-logging-out-of-their-account)
+
+3.1.2 [Restrictions and exclusions](#restrictions-and-exclusions)
+
+3.2 [Non-functional requirements](#non-functional-requirements)
+
+3.2.1 [Quality attributes](#quality-attributes)
+
+3.2.1.1 [Usability requirements](#usability-requirements)
+
+3.2.1.2 [Security requirements](#security-requirements)
+
+3.2.1.3 [Accessibility/availability requirements](#accessibility/availability-requirements)
+
+3.2.2 [External interfaces](#external-interfaces)
+
+3.2.3 [Limitations](#limitations)
+
 ## 1 Introduction
 
 ### 1.1 Purpose
@@ -160,7 +226,7 @@ The interface is designed to be minimalistic and does not contain unnecessary el
 Since the application stores data locally and does not use accounts, it does not require authentication mechanisms.
 The application does not collect or transfer the user's personal data or library metadata to third parties.
 
-##### 3.2.1.3 Accessibility/Availability Requirements
+##### 3.2.1.3 Accessibility/availability requirements
 
 The application's response time to user actions (e.g., turning a page or loading a book) should be minimal.
 The application must be available for offline use after installation.
