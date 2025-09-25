@@ -66,8 +66,8 @@ Main application window.
 
 | User class | Description |
 |:----|:----|
-| Visitors | Users who do not want to register in the application. They have access to partial functionality. |
-| Registered users | Users who have logged into the application under their own name and want to view information about their favourite films, selected according to their preferences, and add reviews to them. They have access to full functionality. |
+| Visitors | Users who do not want to register in the application. They have access to partial functionality |
+| Registered users | Users who have logged into the application under their own name and want to view information about their favourite films, selected according to their preferences, and add reviews to them. They have access to full functionality |
 
 #### 2.3.2 Application audience
 
@@ -92,8 +92,75 @@ The app's secondary audience is people who work with large amounts of educationa
 
 ##### 3.1.1.1 Library management
 
-| Function  |  Requirements |
+| Function | Requirements |
 |:----|:----|
-| Adding a new book | The application must allow the user to select a file (EPUB or PDF) from the device's file system and add it to the local library. |
-| Deleting a book  | The application must allow the user to permanently delete a book from the local library. Confirmation must be requested before deletion. |
-| Search and filtering | The application must allow the user to search by title and author, as well as filter the list of books by genre or reading status. |
+| Adding a new book | The application must allow the user to select a file (EPUB or PDF) from the device's file system and add it to the local library |
+| Deleting a book  | The application must allow the user to permanently delete a book from the local library. Confirmation must be requested before deletion |
+| Search and filtering | The application must allow the user to search by title and author, as well as filter the list of books by genre or reading status |
+
+##### 3.1.1.2 Reading and progress
+
+| Function | Requirements |
+|:----|:----|
+| Opening a book | The application should display the selected book in reading mode, preserving the formatting of the source file |
+| Saving progress | The application should automatically save the current reading position (page number or position in the text) when closing the book or exiting the application |
+| Turning pages | The application should provide smooth page turning using gestures (swipe) or tapping the edges of the screen |
+| Appearance settings | The application should allow the user to change the font size and type, as well as select one of the available colour schemes (e.g. light, dark) |
+
+##### 3.1.1.3 Working with files
+
+| Function | Requirements |
+|:----|:----|
+| EPUB support | The application must correctly parse and display standard EPUB files |
+| PDF support | The application must correctly display PDF files, allowing the user to zoom in and out on the page |
+
+##### 3.1.1.4 User login to the application
+
+| Function | Requirements |
+|:----|:----|
+| Logging into the application without creating a profile | The application must allow the user to log into the application anonymously |
+| New user registration | The application must ask the user to enter a name to create an account. The user must either enter a name or cancel the action |
+| A user with that name already exists | The app should notify the user of a registration error and ask them to enter a name. The user should either enter a name or cancel the action |
+| Registered user login | The app should provide the user with a list of registered user names. The user should either select their name from the list or cancel the action |
+
+##### 3.1.1.5 Logged-in user logging out of their account
+
+| Function | Requirements |
+|:----|:----|
+| Logging out of the account | The application must allow logged-in users to log out of their account and return to the application login window |
+
+#### 3.1.2 Restrictions and exclusions
+
+The application can only add new books to the collection when connected to the Internet.
+
+### 3.2 Non-functional requirements
+
+#### 3.2.1 Quality attributes
+
+##### 3.2.1.1 Usability requirements
+
+The application implements all the basic functions necessary for library management and comfortable reading.
+All functional elements of the user interface (buttons, icons) have clear icons or labels describing the action that will occur when they are selected.
+The interface is designed to be minimalistic and does not contain unnecessary elements that distract from the reading process.
+
+##### 3.2.1.2 Security requirements
+
+Since the application stores data locally and does not use accounts, it does not require authentication mechanisms.
+The application does not collect or transfer the user's personal data or library metadata to third parties.
+
+##### 3.2.1.3 Accessibility/Availability Requirements
+
+The application's response time to user actions (e.g., turning a page or loading a book) should be minimal.
+The application must be available for offline use after installation.
+
+#### 3.2.2 External interfaces
+
+The application windows are user-friendly:
+The font size must be easily adjustable by the user to ensure comfortable reading.
+The interface is designed in accordance with a style that looks harmonious on all target platforms, in accordance with the requirements of the Kivy framework.
+
+#### 3.2.3 Limitations
+
+The application is implemented for a cross-platform environment (Android, iOS, Windows, macOS).
+The language in which the programme is implemented is Python, using the Kivy framework.
+A local SQLite database is used to store data about the library and reading progress.
