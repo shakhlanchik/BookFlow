@@ -1,4 +1,4 @@
-# BookFlow - Deployment Diagram
+# BookFlow - Deployment Diagrams
 
 ## Overview
 This document provides a Deployment Diagram for the BookFlow application. This diagram illustrates the physical hardware node (the user's device) and shows how the application's software artifacts (the compiled code, local database, and book files) are mapped onto it. It provides a clear view of the application's simple, self-contained runtime architecture.
